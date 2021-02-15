@@ -1,0 +1,120 @@
+@import "reset.css";
+@import "status.css";
+@import "variables.css";
+@import "components/nav-bar.css";
+@import "screens/screen-header.css";
+@import "screens/friends.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "screens/find.css";
+@import "components/icon-row.css";
+@import "screens/more.css";
+@import "screens/setting.css";
+@import "components/alt-screen-header.css";
+@import "screens/chat.css";
+@import "components/no-mobile.css";
+
+body{
+    height: 150vh;
+    background:linear-gradient(#f9c8dc, #91d2ee,#cb7cff,#da6ba0);
+    color: #2e363e;
+    font-family: 'Rambla', sans-serif;
+
+}
+
+.welcome-header{
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+.welcome-header__title{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.welcome-header__text{
+    width: 60%;
+    opacity: 0.7;
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#login-form input{
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    
+}
+#login-form input:first-child{
+    background-color: #91d2ee;
+}
+#login-form input:nth-child(2){
+    background-color:#a2b8f3;
+}
+#login-form input:not([type="submit"]){
+    
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+    transition: border-color 0.3s ease-in-out;
+} 
+
+#login-form input::placeholder{
+    color: rgb(0,0,0,0.4)
+}
+
+#login-form input:focus{
+    border-color:var(--yellow);
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 5px;
+}
+#login-form a{
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
+.main-screen{
+    padding: 0px var(--horizontal-space);
+}
+
+@keyframes marioRotate{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes marioMove{
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: none;
+    }
+}
+#mario{
+    animation: marioMove 3s linear infinite;
+}
+#mario:hover{
+    animation:marioRotate 3s linear infinite;
+}

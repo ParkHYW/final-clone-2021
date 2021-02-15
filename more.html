@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More-Kokoa Talk</title>
+</head>
+<body>
+
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>    
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>  
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="setting.html">
+                  <i class="fas fa-cog fa-lg"></i>
+                  </a> 
+            </span>
+        </div>
+    </header>
+
+   
+    <main class="main-screen more-screen"> 
+        <div class="user-component">
+            <div class="user-component__column">
+                <img
+                src="https://w.namu.la/s/a082ab86a2041fff4ad20f256607583657f39ba02d802ee5902fdb5693b06b28c47dc6724ab41194db261a0673da9d412fc996e154a8bff0bc2f4a1581eeb160df8db926514c0f9ab112fd1769e23475f160c594fe78a55a56fc6905a53957ac"
+                class="user-component__avatar user-component__avatar--xl" width="70" height="70"
+                />
+                <div class="user-component__text"> 
+                    <h4 class="user-component__title">King Boo </h4>
+                    <h6 class="user-component__subtitle">010-1234-1234</h6>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+        <div class="icon-row">
+            <div class="icon-row__icon"><i class="far fa-calendar"></i><span>Calendar</span></div>
+            <div class="icon-row__icon"><i class="far fa-smile-wink"></i><span>Emoticons</span></div>
+            <div class="icon-row__icon"><i class="fas fa-paint-roller"></i><span>Themes</span></div>
+            <div class="icon-row__icon"><i class="fas fa-file-invoice-dollar"></i><span>Accont</span></div>
+            
+        </div>
+
+        <h4 class="more-suggsetions__title">Suggestions   ::   Join Mario Kart 8!</h4>
+        
+        <div class="more-suggestions__list">
+            <img id="mario" src="https://ww.namu.la/s/8c4c2f5028951a1728e32238f70b1926b6831c22974ca59ab9b207aea02092b40e5c499f0e10194643f341fa4167b3a442d15808e436c3a6296e9c6e8f8f792e3736877ff608aa9dab7324b5454b4dce194d472ab0734bb3fce4a42129ce7ef5437a2ead39fcbb66f9dce3ec39ae92d8" />
+                
+            
+
+            <!--
+            <div class="more-suggestions">
+                
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        
+                        <img class="more-suggestions__icon-image" src="https://w.namu.la/s/7b83d3baf50852ff51cf7312b98da8ccf4637de4dd3b2a09983d3f1b3ba82ac256b8809057625d58787deca7e77ec5b59dba3d0a0cd9a9d09d4a6f137bf639be0b0f47178ac3060af4361fed90d4c883fe2dd4e5da507a4592c982dbc3df4680" />
+                      
+                        <span class="more-suggestions__icon-text">초록등껍질</span>
+                    </div>
+                </div> 
+
+
+
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        
+                        <img class="more-suggestions__icon-image" src="https://ww.namu.la/s/88a4f49a9aa3a8aa64ad1b6391c951e3d6ec1e0e5aba7210c7d7e29bd31cb94dfcaa0dec9f06735ad1301d85dbdf5b732e73a6be52364b05d8d6298dcea870aae92324da5e9d7759323d64cd4d1a105d3a1ef65df134d6cf2b0ba8301391a875" />
+                       
+                        <span class="more-suggestions__icon-text">바나나</span>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="more-suggestions">
+                
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        
+                        <img class="more-suggestions__icon-image" src="https://ww.namu.la/s/8e649a4fce3c0d8c25993dcb7b00037b0e711a677362402c75632ca237ad282be02e5d9765eab6d2b391639e23ebd0e6d53dfcaf31a1f488a83b4059fedaabd57edee5a4fdd4dc6c4bacee0481b1d24359126577d16b628a3fc6e74121bca0ac" />
+                        
+                        <span id="match" class="more-suggestions__icon-text">가시돌이등껍질</span>
+                    </div>
+                </div> 
+
+
+
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        <div class="more-suggestions__icon-image">
+                            <img class="more-suggestions__icon-image" src="https://w.namu.la/s/4cd9901df8f56e6f3d10666c1c7112ab69bf7cd2f8a370b45d31f5a6a320da306dd37bb48d2415d08bdc292712f2a31d840d59c8d45d3d5cf50298cde6ed8ff723dc564f562db659fe1f7a3d31e0a05f5f5f1dfc7dbeb626abcca65456a19634" />
+                        </div>
+                        <span class="more-suggestions__icon-text">황금대시버섯</span>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+
+            <div class="more-suggestions">
+                
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        
+                        <img class="more-suggestions__icon-image" src="https://w.namu.la/s/6a39e6d24de962b8c7d47c94dcb7c8f3a7acdc5f175cf2f8c19383c317551baa499571eeddf4f2413ba67d1fc363910fa1415c722fee36c4db2110237e26dcbf6d5badcd160a7a040005fbe90226698dfdcca84c84db96d40772f53120f715df" />
+                        
+                        <span class="more-suggestions__icon-text">빨강등껍질</span>
+                    </div>
+                </div> 
+
+
+
+                <div class="more-suggestions__icons">
+                    <div class="more-suggestions__icon">
+                        <div class="more-suggestions__icon-image">
+                            <img class="more-suggestions__icon-image" src="https://ww.namu.la/s/7d81f0c6948b43d593ba43c2c37d72bc1d34ee2d467ae027da683f47c11277203b373c9ae2f8be76290cc5166156e343204879448923513239e8d5137ce290368fe33fdf4f7259f35fdbe9cba1a01625a465b40ee6c37e475ca6671e066e03b8" />
+                        </div>
+                        <span class="more-suggestions__icon-text">대시버섯</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>  -->
+<!--
+                <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <div class="more-suggestions__icon-image">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions__icon-text">Kokoa Story</span>
+                </div>
+            </div>
+
+-->
+     
+        </div>
+
+
+  
+
+
+
+
+    </main>
+
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                
+                <a class="nav__link" href="chats.html">
+                    <i class="far fa-comment fa-2x"></i>
+                    <span class="nav__notification badge">5</span>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-2x"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__el"></span>
+                    <i class="fas fa-ellipsis-h fa-2x">
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+:root{
+    --yellow:#fae100;
+    --horizontal-space:25px;
+    --main-border:1px solid rgba(0,0,0,0.3);
+    --gra:linear-gradient(#1393d8, #28aee5,#245dc6,#c16ef8,#d14187);
+}
